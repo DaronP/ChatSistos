@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+client
+client
+client
+mensaje.pb.cc
+mensaje.pb.h
