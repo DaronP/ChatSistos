@@ -281,7 +281,7 @@ int main(int argc, char *argv[])
 		
 		
     	while(1){
-		cout << "Bienvenid@ al chat \n	1. Chatear con todos los usuarios\n	2. Enviar mensaje a un usuario\n	3. Cambiar de status\n	4. Lista de usuarios conectados\n	5. Informacion de un usuario\n	6. Ayuda\n	7. Salir\n";
+		cout << "Bienvenid@ al chat \n	1. Chatear con todos los usuarios\n	2. Enviar mensaje a un usuario\n	3. Cambiar de status\n	4. Ayuda\n	5. Salir\n";
 		cout << "> ";
 		string data;
         	getline(cin, data);
@@ -326,24 +326,15 @@ int main(int argc, char *argv[])
 		}
 
 		if(data == "4"){
-			getConnectedUsers(clientSd, sendSockAddr);
+			cout << "Bienvenid@ al chat \n	1. Chatear con todos los usuarios\n	2. Enviar mensaje a un usuario\n	3. Cambiar de status\n	4. Ayuda\n	5. Salir\n";
+			cout << "> ";
 		}
 
 		if(data == "5"){
-			cout << "Ingrese el nombre de usuario" << endl;
-			cin >> usrN;
-			getUserInfo();
-		}
-		
-		if(data == "6"){
-			
-		}	
-
-		if(data == "7"){
 			cout << "Gracias por usar el servicio de Chat\n";
 			break;
 		}
-		if(data != "1" || data != "2"  || data != "3"  || data != "4" || data != "5"  || data != "6"  || data != "7"){
+		if(data != "1" || data != "2"  || data != "3"  || data != "4" || data != "5"){
 			cout << "Opcion invalida" << endl;
 		}
 	}
