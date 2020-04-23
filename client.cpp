@@ -278,7 +278,7 @@ int main(int argc, char *argv[])
 		
 		
     	while(1){
-		cout << "Elija la opcion que prefiera: \n	1. Chatear con todos los usuarios\n	2. Enviar mensaje a un usuario\n	3. Cambiar de status\n	4. Lista de usuarios conectados\n	5. Informacion de un usuario\n	6. Ayuda\n	7. Salir\nQue opcion desea: \n";
+		cout << "Elija una opcion: \n	1. Enviar mensaje al server\n	2. Enviar mensaje privado\n	3. Cambiar de estado\n	4. Lista de usuarios conectados\n	5. Informacion de un usuario\n	6. Ayuda\n	7. Salir\nQue opcion desea: \n";
 		cout << "> ";
 		string data;
         	getline(cin, data);
@@ -297,7 +297,7 @@ int main(int argc, char *argv[])
 		}
 
 		if(data == "2"){
-			cout << "A quien quiere mandar el mensaje?" << endl;
+			cout << "Ingrese el nombre de usuario" << endl;
 			cin >> dest;
 			cout << "Ingrese el mensaje" << endl;
 			cin >> mp;
@@ -306,7 +306,7 @@ int main(int argc, char *argv[])
 		}
 
 		if(data == "3"){
-			cout << "Seleccione un estado: (1: activo, 2: dormido?, 3: inactivo): ";
+			cout << "Seleccione un estado: (1: activo, 2: dormido, 3: inactivo): ";
 			cin >> estado;
 			if(estado == 1)
 			{
@@ -331,9 +331,15 @@ int main(int argc, char *argv[])
 			cin >> usrN;
 			getUserInfo();
 		}
-	
 
 		if(data == "6"){
+			cout << "Elija una opcion: \n	1. Enviar mensaje al server\n	2. Enviar mensaje privado\n	3. Cambiar de estado\n	4. Lista de usuarios conectados\n	5. Informacion de un usuario\n	6. Ayuda\n	7. Salir\nQue opcion desea: \n";
+			cout << "> ";
+
+		}
+	
+
+		if(data == "7"){
 			cout << "Gracias por usar el servicio de Chat\n";
 			break;
 		}
